@@ -316,7 +316,7 @@ export default function HeroSection() {
     };
   }, []);
 
-  // codeline animation 
+  // codeline animation
   const codeLines = [
     `// Welcome to my portfolio`,
     `const me = {`,
@@ -366,10 +366,10 @@ export default function HeroSection() {
           {/* intro section */}
           <section
             id="home"
-            className="flex flex-col lg:flex-row items-center justify-between mt-20 px-4 lg:px-20 py-16 lg:py-24 bg-[#e4e7ea] scroll-mt-20"
+            className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between mt-20 px-4 lg:px-20 py-16 lg:py-24 bg-[#e4e7ea] scroll-mt-20 "
           >
             {/* text content */}
-            <div className="w-full lg:w-1/2 space-y-6 lg:space-y-8">
+            <div className="w-full lg:w-1/2 space-y-6 lg:space-y-8 max-w-7xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
                 Hi, I'm <br />
                 Stephanie Alor
@@ -513,7 +513,7 @@ export default function HeroSection() {
           {/* about section */}
           <section
             id="about"
-            className="flex flex-col items-center justify-center text-center px-6 md:px-10 py-1 md:py-14  scroll-mt-24 lg:scroll-mt-20"
+            className="flex flex-col items-center justify-center text-center px-6 md:px-10 py-1 md:py-14  scroll-mt-24 lg:scroll-mt-20 max-w-7xl mx-auto"
           >
             {/*title*/}
             <h2 className="text-4xl md:text-5xl font-bold text-black mb-2 relative inline-block">
@@ -542,7 +542,7 @@ export default function HeroSection() {
             </div>
           </section>
 
-          <section className="flex flex-col lg:flex-row items-start justify-between px-6 lg:px-20 py-10 ">
+          <section className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start justify-between px-6 lg:px-20 py-10 ">
             {/* image */}
             <div className="mt-10 md:mt-0 flex justify-center lg:justify-start mb-10 lg:mb-0 mx-auto">
               <Image
@@ -555,14 +555,14 @@ export default function HeroSection() {
             </div>
 
             {/* skills */}
-            <div className="lg:w-[60%] space-y-6">
+            <div className="lg:w-[60%] space-y-6 ">
               {/* skills */}
               <div className="pt-4">
                 <h3 className="text-3xl font-semibold text-gray-800 mb-4">
                   Skills
                 </h3>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-7xl mx-auto">
                   {/* design / UI / UX */}
                   <div className="flex items-start gap-4 bg-white/60 backdrop-blur-md border border-white/40 rounded-xl p-4 shadow-sm">
                     <FaPaintBrush className="text-indigo-600 mt-1" size={20} />
@@ -652,13 +652,13 @@ export default function HeroSection() {
           </section>
 
           {/* Technologies section */}
-          <section id="services" className="py-5 lg:scroll-mt-20 scroll-mt-10">
+          <section id="services" className="py-5 lg:scroll-mt-20 scroll-mt-10 ">
             {/* Heading */}
             <div className="text-center mb-14">
               <h2 className="text-3xl font-bold text-black">
                 Technologies & Tools
               </h2>
-              <p className="px-4 lg:px-0 text-gray-600 mt-2 lg:w-[60%] mx-auto text-[18px] lg:text-[24px]">
+              <p className="max-w-7xl mx-auto px-4 lg:px-0 text-gray-600 mt-2 lg:w-[60%] mx-auto text-[18px] lg:text-[24px]">
                 I work with a range of modern technologies and tools to build
                 scalable, efficient, and visually appealing web applications.
                 These are the tools I use day-to-day in my projects.
@@ -771,7 +771,7 @@ export default function HeroSection() {
           {/* contact me  section */}
           <div id="contact" className="text-center scroll-mt-30 py-10 lg:py-0">
             <h2 className="text-3xl font-bold text-black">Contact Me</h2>
-            <p className="px-10 lg:px-2 text-gray-600 mt-2 lg:w-[50%] mx-auto text-[18px] lg:text-[24px]">
+            <p className="max-w-7xl mx-auto px-10 lg:px-2 text-gray-600 mt-2 lg:w-[50%] mx-auto text-[18px] lg:text-[24px]">
               I’m open to new opportunities, collaborations, and conversations.
               Feel free to reach out and let’s see how we can work together.
             </p>
@@ -902,4 +902,3 @@ export default function HeroSection() {
     </div>
   );
 }
-
